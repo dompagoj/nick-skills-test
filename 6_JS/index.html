@@ -1,0 +1,34 @@
+<html>
+  <script>
+    class Operators {
+      constructor() {
+        this.operatorsInfo = {}
+        this.addUserToOperator = this.addUserToOperator.bind(this)
+      }
+
+      addUserToOperator(userId, operatorId) {
+        this.operatorsInfo[operatorId] = [...(this.operatorsInfo[operatorId] ?? []), userId]
+      }
+
+      getNumberOfUsersPerOperator() {
+        return Object.entries(this.operatorsInfo).reduce((acc, [operatorId, userIds]) => {
+          if (!acc[operatorId]) acc[operatorId] = 0
+
+          acc[operatorId] += userIds.length
+
+          return acc
+        }, {})
+      }
+    }
+
+    const opts = new Operators()
+
+    opts.addUserToOperator(1, 3)
+    opts.addUserToOperator(2, 3)
+    opts.addUserToOperator(5, 3)
+
+    opts.addUserToOperator(5, 2)
+
+    console.log(opts.getNumberOfUsersPerOperator())
+  </script>
+</html>

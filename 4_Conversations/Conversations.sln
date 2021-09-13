@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversations", "Conversations.csproj", "{885DBFD1-1647-4071-B720-A2B1F10DCA28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{885DBFD1-1647-4071-B720-A2B1F10DCA28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885DBFD1-1647-4071-B720-A2B1F10DCA28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885DBFD1-1647-4071-B720-A2B1F10DCA28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885DBFD1-1647-4071-B720-A2B1F10DCA28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
